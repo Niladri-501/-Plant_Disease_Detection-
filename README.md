@@ -52,8 +52,8 @@ To prepare the data for model training, we performed the following preprocessing
 
 To improve the generalization of our model, we applied data augmentation techniques:
 
-1. **[Type of Augmentation 1]**: [Description of augmentation, e.g., random rotation, flipping for image data, etc.]
-2. **[Type of Augmentation 2]**: [Further augmentations applied, such as noise injection, scaling, etc.]
+1. **[Model 1 Augmentation]**:     rescale=1./255, rotation_range=20, width_shift_range=0.2, height_shift_range=0.2, shear_range=0.2, zoom_range=0.2, horizontal_flip=True, fill_mode='nearest'
+2. **[Model 2 Augmentation]**:     rescale=1./255, rotation_range=20, width_shift_range=0.2, height_shift_range=0.2, shear_range=0.2, zoom_range=0.2, horizontal_flip=True, fill_mode='nearest'
 
 These techniques helped improve the robustness of our models by increasing the diversity of the training data.
 
