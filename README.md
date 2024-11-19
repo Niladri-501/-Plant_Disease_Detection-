@@ -174,8 +174,6 @@ In conclusion, we successfully replicated the model described in the paper "[Pap
 
 ## **References**
 
-1. [Paper Title and Citation]  
-2. [Additional References, e.g., datasets, libraries used, etc.]
-
+1. Paper : https://www.sciencedirect.com/science/article/pii/S0168169923008694
 ---
 
