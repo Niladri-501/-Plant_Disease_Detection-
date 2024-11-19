@@ -150,11 +150,11 @@ We evaluated the performance of both models using the following metrics:
 
 Below are the graphs showing the model performance during training:
 
-1. **Model 1 (e.g., CNN) - Loss and Accuracy Curves**  
-   ![Model 1 - Loss vs Accuracy](./images/model1_loss_accuracy.png)
+1. **Model 2 Accuracy**  
+   ![Model 1 - Loss vs Accuracy](./Model_2_accuracy.PNG)
 
-2. **Model 2 (e.g., SVM) - Confusion Matrix and Performance**  
-   ![Model 2 - Confusion Matrix](./images/model2_confusion_matrix.png)
+2. **Model 2 Loss**  
+   ![Model 2 - Confusion Matrix](./Model_2_loss.PNG)
 
 ---
 
