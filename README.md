@@ -98,18 +98,37 @@ We implemented two different machine learning models to evaluate their performan
   - Optimizer: Adam
   - Loss: categorical_crossentropy
   - Metrics: accuracy
-### **Model 2: [Model Name, e.g., Support Vector Machine (SVM)]**
+### **Model 2: [CNN with Squeeze-and-Excitation (SE) Block]**
 
 - **Architecture:**  
-  The model uses a traditional machine learning approach. It consists of [describe the architecture, e.g., hyperparameters used in the SVM model, kernel function, etc.].
+  The model architecture consists of convolutional layers with varying kernel sizes, followed by the Squeeze-and-Excitation (SE) block for feature recalibration, global average pooling, and dense layers for classification.
+
+  [Layer 1: Input] Shape: (256, 256, 3)  
+  [Layer 2: Conv2D] Filters: 64, Kernel size: 3x3, Activation: ReLU, Padding: 'same'  
+  [Layer 3: Conv2D] Filters: 128, Kernel size: 3x3, Activation: ReLU, Padding: 'same'  
+  [Layer 4: Conv2D] Filters: 256, Kernel size: 3x3, Activation: ReLU, Padding: 'same'  
+  [Layer 5: Conv2D] Filters: 64, Kernel size: 3x3, Activation: ReLU, Padding: 'same'  
+  [Layer 6: Conv2D] Filters: 64, Kernel size: 5x5, Activation: ReLU, Padding: 'same'  
+  [Layer 7: Conv2D] Filters: 64, Kernel size: 7x7, Activation: ReLU, Padding: 'same'  
+  [Layer 8: Conv2D] Filters: 64, Kernel size: 9x9, Activation: ReLU, Padding: 'same'  
+  [Layer 9: Add] Operation: Sum of the feature maps from layers 6, 7, and 8  
+  [Layer 10: GlobalAveragePooling2D] Operation: Global average pooling  
+  [Layer 11: Reshape] Target shape: (1, 1, 64)  
+  [Layer 12: SEBlock] Operation: Squeeze-and-Excitation block (attention mechanism)  
+  [Layer 13: Flatten] Operation: Flatten the output for dense layers  
+  [Layer 14: Dense] Units: num_classes (38), Activation: Softmax  
 
 - **Hyperparameters:**
-  - Kernel: [Linear/Polynomial/RBF]
-  - C: [Value of C]
-  - Gamma: [Value of Gamma]
+  - Learning Rate: 0.001
+  - Batch Size: 32
+  - Epochs: 10
 
-- **Model Training:**  
-  The model was trained using [optimizer, if applicable], and the classifier output was evaluated using [accuracy, F1-score, etc.].
+- **Model Summary:**  
+  - Total Layers: 14
+  - Trainable Parameters: 1,156,458 (4.41 MB)
+  - Optimizer: Adam
+  - Loss: categorical_crossentropy
+  - Metrics: accuracy
 
 ---
 
