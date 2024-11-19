@@ -41,10 +41,10 @@ For this project, we used the Plant Diseases Detection Datasets. The dataset con
 
 To prepare the data for model training, we performed the following preprocessing steps:
 
-1. **Cleaning:** [Explain any data cleaning steps, e.g., handling missing values, removing duplicates]
-2. **Normalization/Standardization:** [If applicable, explain any normalization or standardization methods used to scale data]
-3. **Splitting the Dataset:** The dataset was split into training and testing sets with a ratio of [80%/20% or other split ratio].
-4. **Encoding (if necessary):** [Describe any encoding steps, such as one-hot encoding for categorical data]
+1. **Cleaning:** The dataset was assumed to be clean, with no missing values or duplicates. Images were verified to ensure they were properly labeled and placed in corresponding class directories.
+2. **Normalization/Standardization:** The pixel values of the images were normalized by scaling them to the range [0, 1] using the rescale=1./255 parameter in the ImageDataGenerator. This ensures that all input features have a consistent scale and helps with faster convergence during training.
+3. **Splitting the Dataset:** The dataset was split into 80/20 training and validation sets. The "train" directory has 70243 images belonging to 38 classes , while the "valid" directory has 17557 images belonging to 38 classes.
+4. **Encoding (if necessary):** Since the model is designed for multi-class classification, the labels were automatically one-hot encoded using class_mode='categorical' in the ImageDataGenerator. This ensures that the output labels for each image are represented as a one-hot vector corresponding to the class of the image.
 
 ---
 
