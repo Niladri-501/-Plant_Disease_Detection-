@@ -63,22 +63,38 @@ These techniques helped improve the robustness of our models by increasing the d
 
 We implemented two different machine learning models to evaluate their performance on the given task.
 
-### **Model 1: [Model Name, e.g., Convolutional Neural Network (CNN)]**
+### **Model 1: [DFN-PSAN (Deep Feature Network with Pyramid Spatial Attention Network)]**
 
 - **Architecture:**  
-  The model architecture consists of [briefly describe the layers used, e.g., convolutional layers, fully connected layers, activation functions, etc.].  
-  - [Layer 1: Description, e.g., Conv2D, filters=32, kernel size=3x3]
-  - [Layer 2: Description, e.g., MaxPooling2D, pool size=2x2]
-  - [Layer 3: Description, e.g., Dense, units=128, activation=ReLU]
+ The model architecture consists of multiple convolutional blocks with different kernel sizes, attention mechanisms, feature fusion, and global average pooling followed by fully connected layers.
+
+  [Layer 1: Conv2D, filters=32, kernel size=3x3, activation=ReLU, padding='same']  
+  [Layer 2: MaxPooling2D, pool size=2x2]  
+  [Layer 3: Conv2D, filters=64, kernel size=3x3, activation=ReLU, padding='same']  
+  [Layer 4: MaxPooling2D, pool size=2x2]  
+  [Layer 5: Conv2D, filters=32, kernel size=5x5, activation=ReLU, padding='same']  
+  [Layer 6: MaxPooling2D, pool size=2x2]  
+  [Layer 7: Conv2D, filters=64, kernel size=5x5, activation=ReLU, padding='same']  
+  [Layer 8: MaxPooling2D, pool size=2x2]  
+  [Layer 9: Reshape, target shape=(-1, 64)]  
+  [Layer 10: Attention, input=[x1_reshaped, x1_reshaped]]  
+  [Layer 11: Attention, input=[x2_reshaped, x2_reshaped]]  
+  [Layer 12: Reshape, target shape=(x1.shape[1], x1.shape[2], 64)]  
+  [Layer 13: Reshape, target shape=(x2.shape[1], x2.shape[2], 64)]  
+  [Layer 14: Concatenate, axis=-1]  
+  [Layer 15: GlobalAveragePooling2D]  
+  [Layer 16: Dense, units=128, activation=ReLU]  
+  [Layer 17: Dense, units=64, activation=ReLU]  
+  [Layer 18: Dense, units=num_classes, activation=Softmax]  
 
 - **Hyperparameters:**
-  - Learning Rate: [value]
+  - Learning Rate: 0.001
   - Batch Size: 32
   - Epochs: 10
 
 - **Model Summary:**
-  ```python
-  model.summary()  # Display the model architecture summary
+  - Total Layers: 18
+  - Trainable Parameters: 2,536,064
 ### **Model 2: [Model Name, e.g., Support Vector Machine (SVM)]**
 
 - **Architecture:**  
