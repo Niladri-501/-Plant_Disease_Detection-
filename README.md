@@ -94,7 +94,7 @@ We implemented two different machine learning models to evaluate their performan
 
 - **Model Summary:**
   - Total Layers: 18
-  - Trainable Parameters: 2,536,064
+  - Trainable Parameters: 100,326 (391.90 KB)
 ### **Model 2: [Model Name, e.g., Support Vector Machine (SVM)]**
 
 - **Architecture:**  
