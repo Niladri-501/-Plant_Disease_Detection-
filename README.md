@@ -73,8 +73,8 @@ We implemented two different machine learning models to evaluate their performan
 
 - **Hyperparameters:**
   - Learning Rate: [value]
-  - Batch Size: [value]
-  - Epochs: [value]
+  - Batch Size: 32
+  - Epochs: 10
 
 - **Model Summary:**
   ```python
