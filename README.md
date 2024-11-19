@@ -11,7 +11,9 @@
 
 ## **Project Summary**
 
-In this project, we implemented the machine learning model described in the paper titled "DFN-PSAN: Multi-level deep information feature fusion extraction network for interpretable plant disease classification". The goal of this project is to [describe the primary objective of the paper — for example, predict a certain phenomenon, classify objects, etc.]. The paper proposes a [type of model used in the paper], and in this implementation, we aim to replicate the proposed model and evaluate its performance using a specific dataset.
+In this project, we implemented the machine learning model described in the paper titled "DFN-PSAN: Multi-level deep information feature fusion extraction network for interpretable plant disease classification". The primary objective of this paper is to develop an interpretable and accurate model for plant disease classification using image data of plant leaves. The proposed model combines a deep feature extraction network with a semantic attention mechanism, known as DFN-PSAN (Deep Feature Network with Plant Disease Semantic Attention Network), to enhance both the model’s performance and interpretability. The goal of this project was to replicate the DFN-PSAN model and evaluate its effectiveness on a large plant disease dataset.
+
+To achieve this, we implemented two machine learning models: the DFN-PSAN and a CNN with a Squeeze-and-Excitation (SE) block. Both models were evaluated using a dataset of 87,000 RGB images of healthy and diseased crop leaves across 38 classes. Data preprocessing, including normalization and augmentation, was applied to ensure the model’s robustness. The performance of both models was measured using training and validation accuracy, and loss metrics.
 
 ### **Paper Summary**
 
@@ -158,7 +160,9 @@ Below are the graphs showing the model performance during training:
 
 ## **Conclusion**
 
-In conclusion, we successfully replicated the model described in the paper "[Paper Title]" and evaluated its performance on the given dataset. After experimenting with two different models, we found that [which model performed better and why]. Future work could explore [areas for improvement, such as hyperparameter tuning, using different augmentation techniques, or trying other models].
+In conclusion, we successfully replicated and implemented the DFN-PSAN model described in the paper and evaluated its performance using the provided plant disease dataset. Upon comparing both models, the CNN with the Squeeze-and-Excitation (SE) block outperformed the DFN-PSAN model in terms of validation accuracy and loss. Model 2 achieved a higher validation accuracy of 83.00% compared to Model 1's 80.87%, indicating better generalization and performance on unseen data.
+
+While the DFN-PSAN model leveraged multi-level feature fusion and attention mechanisms, the CNN with SE block demonstrated a more effective integration of feature recalibration and attention, leading to superior results. Future work could focus on further optimizing the models by experimenting with different hyperparameter configurations, exploring additional data augmentation techniques, or implementing advanced model architectures such as transformers for image classification tasks.
 
 ---
 
