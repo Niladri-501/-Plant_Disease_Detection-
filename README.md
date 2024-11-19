@@ -23,15 +23,15 @@ The paper discusses the use of a multi-level deep information feature fusion ext
 
 ### **Dataset Overview**
 
-For this project, we used the [Dataset Name], which is commonly used for [task type, e.g., image classification, text classification, etc.]. The dataset contains [number of instances] of data, with each instance consisting of [describe data features, such as text, images, or numerical data]. The dataset is publicly available at [provide dataset link, if applicable].
+For this project, we used the Plant Diseases Detection Datasets. The dataset contains 87K rgb images of healthy and diseased crop leaves of data  which is categorized into 38 different classes. The total dataset is divided into 80/20 ratio of training and validation. A directory contains 33 test images for prediction purpose.
 
 ### **Dataset Details:**
-- **Number of Samples:** [Total number of samples]
-- **Features:** [Describe key features of the dataset]
-- **Target Variable:** [Describe the target variable — what you're trying to predict/classify]
-- **Classes (if applicable):** [List the classes or categories, if classification task]
+- **Number of Samples:** 87K rgb images
+- **Features:** 14 unique plant leaves ['Apple', 'Blueberry', 'Cherry_(including_sour)', 'Corn_(maize)', 'Grape', 'Orange', 'Peach', 'Pepper,_bell', 'Potato', 'Raspberry', 'Soybean', 'Squash', 'Strawberry', 'Tomato']
+- **Target Variable:** healthy / diseased crop leaves
+- **Classes (if applicable):** 38 classes ['Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy', 'Blueberry___healthy', 'Cherry_(including_sour)___healthy', 'Cherry_(including_sour)___Powdery_mildew', 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot', 'Corn_(maize)___Common_rust_', 'Corn_(maize)___healthy', 'Corn_(maize)___Northern_Leaf_Blight', 'Grape___Black_rot', 'Grape___Esca_(Black_Measles)', 'Grape___healthy', 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)', 'Orange___Haunglongbing_(Citrus_greening)', 'Peach___Bacterial_spot', 'Peach___healthy', 'Pepper,_bell___Bacterial_spot', 'Pepper,_bell___healthy', 'Potato___Early_blight', 'Potato___healthy', 'Potato___Late_blight', 'Raspberry___healthy', 'Soybean___healthy', 'Squash___Powdery_mildew', 'Strawberry___healthy', 'Strawberry___Leaf_scorch', 'Tomato___Bacterial_spot', 'Tomato___Early_blight', 'Tomato___healthy', 'Tomato___Late_blight', 'Tomato___Leaf_Mold', 'Tomato___Septoria_leaf_spot', 'Tomato___Spider_mites Two-spotted_spider_mite', 'Tomato___Target_Spot', 'Tomato___Tomato_mosaic_virus', 'Tomato___Tomato_Yellow_Leaf_Curl_Virus']
   
-**Data Source:** [Dataset URL or citation]
+**Data Source:** https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset/data
 
 ---
 
