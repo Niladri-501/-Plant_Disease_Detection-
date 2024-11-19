@@ -156,19 +156,6 @@ Below are the graphs showing the model performance during training:
 
 ---
 
-## **Results and Analysis**
-
-Both models were trained and evaluated on the dataset, and we compared their performance based on the evaluation metrics.
-
-- **Model 1 (CNN)** performed with an accuracy of [value]% and showed strong results in [tasks, e.g., image classification, object detection].
-- **Model 2 (SVM)** performed with an accuracy of [value]% and was better suited for [reason or task, e.g., smaller datasets, simpler problems].
-
-### **Observations:**
-- [Highlight any interesting observations, such as overfitting/underfitting, or any other findings from the training process.]
-- [Comparison between models, e.g., why one performed better than the other.]
-
----
-
 ## **Conclusion**
 
 In conclusion, we successfully replicated the model described in the paper "[Paper Title]" and evaluated its performance on the given dataset. After experimenting with two different models, we found that [which model performed better and why]. Future work could explore [areas for improvement, such as hyperparameter tuning, using different augmentation techniques, or trying other models].
