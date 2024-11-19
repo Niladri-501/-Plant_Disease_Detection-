@@ -136,10 +136,13 @@ We implemented two different machine learning models to evaluate their performan
 
 We evaluated the performance of both models using the following metrics:
 
-- **Accuracy:** [Value for Model 1], [Value for Model 2]
-- **Precision:** [Value for Model 1], [Value for Model 2]
-- **Recall:** [Value for Model 1], [Value for Model 2]
-- **F1 Score:** [Value for Model 1], [Value for Model 2]
+- **Model 1:** 
+  - Training Accuracy: 0.8062  Training Loss: 0.6183
+  - Validation Accuracy: 0.8087 Validation Loss: 0.6047 
+
+- **Model 2:** 
+  - Training Accuracy: 0.8269  Training Loss: 0.5730
+  - Validation Accuracy: 0.8300 Validation Loss: 0.5595 
 
 ### **Training and Validation Graphs**
 
